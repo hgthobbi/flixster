@@ -16,8 +16,9 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 
 ### Notes
-I'm having trouble displaying the gridView Layout. 
+I had some trouble getting the collectionView to properly display data and then another issue with the formatting of the each individual grid. 
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/fjLfFjQ"  ><a href="//imgur.com/a/fjLfFjQ">Codepath Unit 2 Submission</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 ---
 
 ## Flix Part 1
