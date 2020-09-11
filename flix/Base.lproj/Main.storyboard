@@ -140,7 +140,7 @@
         <scene sceneID="0pg-wG-7XO">
             <objects>
                 <viewController id="iXq-8t-5ZO" customClass="MovieGridViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HQo-zC-Pwp" customClass="MovieViee">
+                    <view key="view" contentMode="scaleToFill" id="HQo-zC-Pwp" customClass="MovieView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -195,8 +195,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="bnX-rh-2k1" kind="relationship" relationship="viewControllers" id="WIr-fZ-QHg"/>
                         <segue destination="WfQ-pR-Cdc" kind="relationship" relationship="viewControllers" id="efw-ih-XoW"/>
+                        <segue destination="bnX-rh-2k1" kind="relationship" relationship="viewControllers" id="WIr-fZ-QHg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMp-MQ-gAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -13,26 +13,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-       var movies = [[String:Any]]()
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return movies.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: indexPath) as! MovieGridCell
-
-        let movie = movies[indexPath.item]
-
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
-
-        cell.posterView.af_setImage(withURL: posterUrl!)
-
-        return cell
-    }
+    var movies = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +39,23 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
            }
         }
 
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: indexPath) as! MovieGridCell
+
+        let movie = movies[indexPath.item]
+
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = (movie["poster_path"] as? String) ?? ""
+        let posterUrl = URL(string: baseUrl + posterPath)
+
+        cell.posterView.af_setImage(withURL: posterUrl!)
+
+        return cell
     }
 
     
