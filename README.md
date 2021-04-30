@@ -37,8 +37,7 @@ I had some trouble getting the collectionView to properly display data and then 
 - [X] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-https://imgur.com/a/mKdxdc9.gif
-<img src="https://imgur.com/a/mKdxdc9.gif" width=250><br>
+![](VideoToGif_GIF.GIF)
 
 ### Notes
 When trying to run the app on my actual phone I had issues with apple updates and whether xcode supported my iphone version in addition to approving certificates
